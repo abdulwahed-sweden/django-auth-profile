@@ -1,27 +1,30 @@
 {% extends 'base.html' %}
 {% load django_bootstrap5 %}
 
-{% block title %}Register — AuthProfile{% endblock %}
+{% block title %}Create account — AuthProfile{% endblock %}
 
 {% block content %}
-<div class="row justify-content-center">
-    <div class="col-md-6">
-        <div class="card shadow-sm">
-            <div class="card-body p-4">
-                <h2 class="card-title text-center mb-4">
-                    <i class="bi bi-person-plus"></i> Create Account
-                </h2>
-                <form method="post">
-                    {% csrf_token %}
-                    {% bootstrap_form form %}
-                    <div class="d-grid">
-                        <button type="submit" class="btn btn-success btn-lg">Register</button>
-                    </div>
-                </form>
-                <hr>
-                <p class="text-center mb-0">
-                    Already have an account? <a href="{% url 'accounts:login' %}">Login here</a>
-                </p>
+<div class="auth-wrapper">
+    <div class="auth-card card-custom no-lift" style="max-width: 480px;">
+        <div class="card-body">
+            <div class="auth-logo">
+                <i class="bi bi-person-plus-fill"></i>
+            </div>
+            <h2 class="auth-title">Create account</h2>
+            <p class="auth-subtitle">Fill in your details to get started</p>
+
+            <form method="post">
+                {% csrf_token %}
+                {% bootstrap_form form %}
+                <div class="d-grid mt-4">
+                    <button type="submit" class="btn btn-accent">
+                        <i class="bi bi-check-lg"></i> Create account
+                    </button>
+                </div>
+            </form>
+
+            <div class="auth-footer">
+                Already have an account? <a href="{% url 'accounts:login' %}">Sign in</a>
             </div>
         </div>
     </div>

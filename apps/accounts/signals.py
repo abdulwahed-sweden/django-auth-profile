@@ -1,8 +1,8 @@
 import logging
 
+from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
-from django.contrib.auth.models import User
 
 from .models import Profile
 
@@ -15,4 +15,4 @@ def create_user_profile(sender, instance, created, **kwargs):
         try:
             Profile.objects.create(user=instance)
         except Exception:
-            logger.exception('Failed to create profile for user %s', instance.username)
+            logger.exception("Failed to create profile for user %s", instance.username)

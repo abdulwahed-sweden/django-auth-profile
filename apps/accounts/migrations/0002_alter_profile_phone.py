@@ -5,15 +5,22 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('accounts', '0001_initial'),
+        ("accounts", "0001_initial"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='profile',
-            name='phone',
-            field=models.CharField(blank=True, max_length=20, validators=[django.core.validators.RegexValidator(message='Enter a valid phone number (7-15 digits, optional leading +).', regex='^\\+?\\d{7,15}$')]),
+            model_name="profile",
+            name="phone",
+            field=models.CharField(
+                blank=True,
+                max_length=20,
+                validators=[
+                    django.core.validators.RegexValidator(
+                        message="Enter a valid phone number (7-15 digits, optional leading +).", regex="^\\+?\\d{7,15}$"
+                    )
+                ],
+            ),
         ),
     ]

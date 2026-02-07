@@ -1,5 +1,5 @@
-from rest_framework import serializers
 from django.contrib.auth.models import User
+from rest_framework import serializers
 
 from .models import Profile
 
@@ -11,12 +11,12 @@ class ProfileSerializer(serializers.ModelSerializer):
     The `username` field is read-only and pulled from the related User model.
     """
 
-    username = serializers.CharField(source='user.username', read_only=True)
+    username = serializers.CharField(source="user.username", read_only=True)
 
     class Meta:
         model = Profile
-        fields = ['id', 'username', 'bio', 'avatar_url', 'location', 'phone', 'created_at', 'updated_at']
-        read_only_fields = ['id', 'created_at', 'updated_at']
+        fields = ["id", "username", "bio", "avatar_url", "location", "phone", "created_at", "updated_at"]
+        read_only_fields = ["id", "created_at", "updated_at"]
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -30,7 +30,7 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ['id', 'username', 'email', 'first_name', 'last_name', 'profile']
+        fields = ["id", "username", "email", "first_name", "last_name", "profile"]
 
 
 class UserPublicSerializer(serializers.ModelSerializer):
@@ -40,4 +40,4 @@ class UserPublicSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ['id', 'username', 'first_name', 'last_name', 'profile']
+        fields = ["id", "username", "first_name", "last_name", "profile"]

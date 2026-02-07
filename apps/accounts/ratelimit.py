@@ -1,7 +1,7 @@
 from functools import wraps
 
-from django.core.cache import cache
 from django.contrib import messages
+from django.core.cache import cache
 from django.shortcuts import redirect
 
 
@@ -17,12 +17,12 @@ def ratelimit(key, limit=5, period=300):
     def decorator(view_func):
         @wraps(view_func)
         def wrapper(request, *args, **kwargs):
-            if request.method == 'POST':
-                ip = request.META.get('REMOTE_ADDR', '')
-                cache_key = f'rl:{key}:{ip}'
+            if request.method == "POST":
+                ip = request.META.get("REMOTE_ADDR", "")
+                cache_key = f"rl:{key}:{ip}"
                 attempts = cache.get(cache_key, 0)
                 if attempts >= limit:
-                    messages.error(request, 'Too many attempts. Please try again later.')
+                    messages.error(request, "Too many attempts. Please try again later.")
                     return redirect(request.path)
                 cache.set(cache_key, attempts + 1, period)
             return view_func(request, *args, **kwargs)

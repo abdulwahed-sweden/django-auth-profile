@@ -1,8 +1,12 @@
 # AuthProfile
 
-A Django starter with authentication, user profiles, and a REST API.
+[![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://python.org)
+[![Django](https://img.shields.io/badge/Django-5.2-092E20?logo=django&logoColor=white)](https://djangoproject.com)
+[![DRF](https://img.shields.io/badge/DRF-3.16-ff1709?logo=django&logoColor=white)](https://django-rest-framework.org)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?logo=bootstrap&logoColor=white)](https://getbootstrap.com)
+[![License](https://img.shields.io/github/license/abdulwahed-sweden/django-auth-profile)](LICENSE)
 
-Built with Django 5.2, Django REST Framework, and Bootstrap 5.
+A Django starter with authentication, user profiles, and a REST API.
 
 ## Quick Start
 

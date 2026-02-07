@@ -1,9 +1,11 @@
 # AuthProfile
 
+[![CI](https://github.com/abdulwahed-sweden/django-auth-profile/actions/workflows/ci.yml/badge.svg)](https://github.com/abdulwahed-sweden/django-auth-profile/actions)
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://python.org)
 [![Django](https://img.shields.io/badge/Django-5.2-092E20?logo=django&logoColor=white)](https://djangoproject.com)
 [![DRF](https://img.shields.io/badge/DRF-3.16-ff1709?logo=django&logoColor=white)](https://django-rest-framework.org)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?logo=bootstrap&logoColor=white)](https://getbootstrap.com)
+[![Ruff](https://img.shields.io/badge/code%20style-ruff-261230?logo=ruff&logoColor=d7ff64)](https://docs.astral.sh/ruff/)
 [![License](https://img.shields.io/github/license/abdulwahed-sweden/django-auth-profile)](LICENSE)
 
 A Django starter with authentication, user profiles, and a REST API.
@@ -71,9 +73,33 @@ All API endpoints require authentication (session or token).
 curl -H "Authorization: Token YOUR_TOKEN" http://127.0.0.1:8000/api/profiles/
 ```
 
+## Docker
+
+```bash
+docker compose up --build
+```
+
+Open http://localhost:8000
+
+## Testing
+
+```bash
+python manage.py test apps.accounts --verbosity 2   # 51 tests
+```
+
+## Code Quality
+
+[Ruff](https://docs.astral.sh/ruff/) handles linting and formatting. [pre-commit](https://pre-commit.com/) hooks run automatically on every commit.
+
+```bash
+ruff check .          # lint
+ruff format .         # format
+pre-commit install    # activate hooks (one-time)
+```
+
 ## Tech Stack
 
-Django 5.2 | DRF 3.16 | Bootstrap 5.3 | drf-spectacular | SQLite | WhiteNoise | Gunicorn
+Django 5.2 | DRF 3.16 | Bootstrap 5.3 | drf-spectacular | SQLite | WhiteNoise | Gunicorn | Ruff | GitHub Actions CI
 
 ## License
 

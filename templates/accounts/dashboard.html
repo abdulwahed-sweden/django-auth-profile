@@ -103,9 +103,12 @@
                     <span class="detail-value">{{ user.profile.bio|default:"Not set"|truncatewords:15 }}</span>
                 </div>
 
-                <div class="mt-4">
-                    <a href="{% url 'accounts:profile' %}" class="btn btn-accent w-100">
+                <div class="d-grid gap-2 mt-4">
+                    <a href="{% url 'accounts:profile' %}" class="btn btn-accent">
                         <i class="bi bi-pencil-square"></i> Edit Profile
+                    </a>
+                    <a href="{% url 'accounts:password_change' %}" class="btn btn-ghost">
+                        <i class="bi bi-key"></i> Change Password
                     </a>
                 </div>
             </div>

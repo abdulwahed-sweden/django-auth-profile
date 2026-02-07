@@ -70,10 +70,13 @@
                     </div>
                     {% bootstrap_form profile_form %}
 
-                    <div class="d-grid mt-4">
+                    <div class="d-grid gap-2 mt-4">
                         <button type="submit" class="btn btn-accent">
                             <i class="bi bi-check-lg"></i> Save Changes
                         </button>
+                        <a href="{% url 'accounts:password_change' %}" class="btn btn-ghost">
+                            <i class="bi bi-key"></i> Change Password
+                        </a>
                     </div>
                 </form>
             </div>

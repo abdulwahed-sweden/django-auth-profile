@@ -10,8 +10,8 @@
     --color-border:    #e8eaed;
     --color-border-lt: #f0f1f3;
     --color-text:      #1a1d23;
-    --color-text-sec:  #6b7280;
-    --color-text-mute: #9ca3af;
+    --color-text-sec:  #4b5563;
+    --color-text-mute: #6b7280;
     --color-accent:    #4f6af0;
     --color-accent-h:  #3d56d4;
     --color-accent-lt: #eef1fd;
@@ -80,7 +80,7 @@ body {
     background-color: var(--color-bg);
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     color: var(--color-text);
-    font-size: 0.9375rem;
+    font-size: 1rem;
     line-height: 1.6;
     letter-spacing: -0.01em;
     -webkit-font-smoothing: antialiased;
@@ -99,6 +99,12 @@ h1, h2, h3, h4, h5, h6,
     letter-spacing: -0.025em;
     line-height: 1.3;
 }
+h1, .h1 { font-size: 2.375rem; }
+h2, .h2 { font-size: 1.875rem; }
+h3, .h3 { font-size: 1.5rem; }
+h4, .h4 { font-size: 1.25rem; }
+h5, .h5 { font-size: 1.125rem; }
+h6, .h6 { font-size: 1rem; }
 
 a {
     color: var(--color-accent);
@@ -133,7 +139,7 @@ a:hover {
 .navbar-custom .navbar-brand {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #fff;
     display: flex;
     align-items: center;
@@ -158,8 +164,8 @@ a:hover {
 }
 
 .navbar-custom .nav-link {
-    color: rgba(255,255,255,0.75);
-    font-size: 0.875rem;
+    color: rgba(255,255,255,0.85);
+    font-size: 0.9375rem;
     font-weight: 500;
     padding: 0.5rem 0.875rem;
     border-radius: var(--radius-sm);
@@ -202,7 +208,7 @@ a:hover {
     cursor: pointer;
     transition: all var(--transition);
     color: rgba(255,255,255,0.85);
-    font-size: 0.8125rem;
+    font-size: 0.875rem;
     font-weight: 500;
     line-height: 1;
 }
@@ -318,7 +324,7 @@ a:hover {
     gap: 0.625rem;
     padding: 0.5rem 0.75rem;
     border-radius: var(--radius-sm);
-    font-size: 0.8125rem;
+    font-size: 0.875rem;
     font-weight: 500;
     color: var(--color-text-sec);
     cursor: pointer;
@@ -362,7 +368,7 @@ a:hover {
     border-radius: var(--radius-sm);
     padding: 0.45rem 1rem;
     font-weight: 600;
-    font-size: 0.8125rem;
+    font-size: 0.875rem;
 }
 .nav-link-register:hover,
 .nav-link-register:focus-visible {
@@ -432,7 +438,7 @@ a:hover {
 }
 
 .auth-title {
-    font-size: 1.5rem;
+    font-size: 1.625rem;
     font-weight: 700;
     text-align: center;
     margin-bottom: 0.25rem;
@@ -441,7 +447,7 @@ a:hover {
 .auth-subtitle {
     text-align: center;
     color: var(--color-text-sec);
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     margin-bottom: 2rem;
 }
 
@@ -450,7 +456,7 @@ a:hover {
     padding-top: 1.5rem;
     margin-top: 1.5rem;
     border-top: 1px solid var(--color-border-lt);
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     color: var(--color-text-sec);
 }
 
@@ -460,7 +466,7 @@ a:hover {
     color: #fff;
     border: none;
     font-weight: 600;
-    font-size: 0.9375rem;
+    font-size: 1rem;
     padding: 0.75rem 1.5rem;
     border-radius: var(--radius-sm);
     transition: all var(--transition);
@@ -495,7 +501,7 @@ a:hover {
     color: var(--color-text-sec);
     border: 1px solid var(--color-border);
     font-weight: 500;
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     padding: 0.5rem 1rem;
     border-radius: var(--radius-sm);
     transition: all var(--transition);
@@ -524,7 +530,7 @@ a:hover {
     border: 1px solid var(--color-border);
     border-radius: var(--radius-sm);
     padding: 0.625rem 0.875rem;
-    font-size: 0.9375rem;
+    font-size: 1rem;
     color: var(--color-text);
     background: var(--color-surface);
     transition: all var(--transition);
@@ -541,7 +547,7 @@ a:hover {
 
 .form-label {
     font-weight: 500;
-    font-size: 0.8125rem;
+    font-size: 0.875rem;
     color: var(--color-text-sec);
     margin-bottom: 0.375rem;
     letter-spacing: 0.01em;
@@ -617,7 +623,7 @@ textarea.form-control {
 .stat-icon.dark    { background: #f3f4f6; color: var(--color-text); }
 
 .stat-label {
-    font-size: 0.75rem;
+    font-size: 0.8125rem;
     font-weight: 500;
     color: var(--color-text-mute);
     text-transform: uppercase;
@@ -683,12 +689,12 @@ textarea.form-control {
 
 .quick-link-text strong {
     display: block;
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     font-weight: 600;
 }
 .quick-link-text small {
     color: var(--color-text-mute);
-    font-size: 0.8125rem;
+    font-size: 0.875rem;
 }
 
 /* --- Section Headers --- */
@@ -699,7 +705,7 @@ textarea.form-control {
     margin-bottom: 1.25rem;
 }
 .section-header h5 {
-    font-size: 0.8125rem;
+    font-size: 0.875rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.06em;
@@ -747,7 +753,7 @@ textarea.form-control {
 }
 
 .profile-info h2 {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
     margin-bottom: 0.125rem;
 }
 .profile-info p {
@@ -775,13 +781,13 @@ textarea.form-control {
     flex-shrink: 0;
 }
 .detail-row .detail-label {
-    font-size: 0.8125rem;
+    font-size: 0.875rem;
     font-weight: 500;
     color: var(--color-text-mute);
     min-width: 80px;
 }
 .detail-row .detail-value {
-    font-size: 0.9375rem;
+    font-size: 1rem;
     color: var(--color-text);
 }
 
@@ -796,7 +802,7 @@ textarea.form-control {
     border: none;
     border-radius: var(--radius-md);
     padding: 0.875rem 1.25rem;
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -822,7 +828,7 @@ textarea.form-control {
 
 /* --- Welcome Banner --- */
 .welcome-banner {
-    background: linear-gradient(135deg, var(--color-dark) 0%, #2d3148 100%);
+    background: linear-gradient(135deg, #111827 0%, #1e1b4b 100%);
     border-radius: var(--radius-xl);
     padding: 2.25rem 2.5rem;
     color: #fff;
@@ -841,13 +847,13 @@ textarea.form-control {
     border-radius: 50%;
 }
 .welcome-banner h1 {
-    font-size: 1.625rem;
+    font-size: 1.75rem;
     color: #fff;
     margin-bottom: 0.375rem;
     position: relative;
 }
 .welcome-banner p {
-    color: rgba(255,255,255,0.65);
+    color: rgba(255,255,255,0.8);
     font-size: 0.9375rem;
     margin: 0;
     position: relative;
@@ -874,8 +880,8 @@ textarea.form-control {
     margin-top: 3rem;
 }
 .footer-custom p {
-    color: rgba(255,255,255,0.55);
-    font-size: 0.8125rem;
+    color: rgba(255,255,255,0.7);
+    font-size: 0.875rem;
     margin: 0;
     text-align: center;
     letter-spacing: 0.01em;
@@ -894,7 +900,7 @@ textarea.form-control {
     margin-bottom: 1.75rem;
 }
 .page-title-row h1 {
-    font-size: 1.5rem;
+    font-size: 1.625rem;
     margin: 0;
 }
 
@@ -919,7 +925,7 @@ textarea.form-control {
 
 /* --- Form Sections --- */
 .form-section-title {
-    font-size: 0.75rem;
+    font-size: 0.8125rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.06em;
@@ -1036,7 +1042,7 @@ textarea.form-control {
         padding: 1.5rem;
     }
     .welcome-banner h1 {
-        font-size: 1.25rem;
+        font-size: 1.375rem;
     }
     .stat-card {
         padding: 1.25rem;
@@ -1094,8 +1100,8 @@ textarea.form-control {
 
 /* --- Footer Links --- */
 .footer-link {
-    color: rgba(255,255,255,0.6);
-    font-size: 0.8125rem;
+    color: rgba(255,255,255,0.7);
+    font-size: 0.875rem;
     transition: color var(--transition);
 }
 .footer-link:hover {
@@ -1106,14 +1112,14 @@ textarea.form-control {
     outline-offset: 2px;
 }
 .footer-sep {
-    color: rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.3);
     margin: 0 0.25rem;
-    font-size: 0.8125rem;
+    font-size: 0.875rem;
 }
 
 /* --- Hero Section (Home) --- */
 .hero-section {
-    background: linear-gradient(180deg, var(--color-dark) 0%, #1e2035 100%);
+    background: linear-gradient(160deg, #0f172a 0%, #1e1b4b 50%, #312e81 100%);
     padding: 5rem 0 4rem;
     position: relative;
     overflow: hidden;
@@ -1126,7 +1132,7 @@ textarea.form-control {
     transform: translateX(-50%);
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(79,106,240,0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 70%);
     border-radius: 50%;
 }
 
@@ -1157,8 +1163,8 @@ textarea.form-control {
 }
 
 .hero-subtitle {
-    font-size: 1.125rem;
-    color: rgba(255,255,255,0.6);
+    font-size: 1.1875rem;
+    color: rgba(255,255,255,0.75);
     max-width: 480px;
     margin: 0 auto 2rem;
     line-height: 1.7;
@@ -1171,6 +1177,17 @@ textarea.form-control {
     flex-wrap: wrap;
 }
 
+/* --- Hero Ghost Button Override --- */
+.hero-section .btn-ghost {
+    color: rgba(255,255,255,0.85);
+    border-color: rgba(255,255,255,0.25);
+}
+.hero-section .btn-ghost:hover {
+    color: #fff;
+    border-color: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.1);
+}
+
 /* --- Features Section (Home) --- */
 .features-section {
     padding: 4rem 0;
@@ -1178,12 +1195,12 @@ textarea.form-control {
 }
 
 .section-title {
-    font-size: 1.75rem;
+    font-size: 1.875rem;
     margin-bottom: 0.5rem;
 }
 .section-subtitle {
     color: var(--color-text-sec);
-    font-size: 1rem;
+    font-size: 1.0625rem;
 }
 
 .feature-card {
@@ -1193,13 +1210,13 @@ textarea.form-control {
     padding: 2rem 1.5rem;
 }
 .feature-card h5 {
-    font-size: 1.0625rem;
+    font-size: 1.125rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
 .feature-card p {
     color: var(--color-text-sec);
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     line-height: 1.65;
     margin: 0;
 }
@@ -1228,7 +1245,7 @@ textarea.form-control {
     display: inline-flex;
     align-items: center;
     gap: 0.375rem;
-    font-size: 0.8125rem;
+    font-size: 0.875rem;
     font-weight: 600;
     color: var(--color-text-sec);
     padding: 0.375rem 0.875rem;
@@ -1258,7 +1275,7 @@ textarea.form-control {
     align-items: center;
     gap: 0.5rem;
     padding: 0.5rem 0;
-    font-size: 0.9375rem;
+    font-size: 1rem;
     font-weight: 500;
     color: var(--color-text);
 }
@@ -1273,7 +1290,7 @@ textarea.form-control {
     padding-bottom: 0;
 }
 .help-item h6 {
-    font-size: 0.9375rem;
+    font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
     display: flex;
@@ -1282,7 +1299,7 @@ textarea.form-control {
 }
 .help-item p {
     color: var(--color-text-sec);
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     line-height: 1.7;
     margin-bottom: 0;
     padding-left: 1.625rem;
@@ -1298,7 +1315,7 @@ textarea.form-control {
     gap: 1rem;
     padding: 0.5rem 0;
     border-bottom: 1px solid var(--color-border-lt);
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
 }
 .api-row:last-child {
     border-bottom: none;
@@ -1333,7 +1350,7 @@ textarea.form-control {
     border-collapse: collapse;
 }
 .table-custom th {
-    font-size: 0.75rem;
+    font-size: 0.8125rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -1345,7 +1362,7 @@ textarea.form-control {
 .table-custom td {
     padding: 0.625rem 1rem;
     border-bottom: 1px solid var(--color-border-lt);
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     color: var(--color-text);
 }
 .table-custom td code {
@@ -1359,19 +1376,19 @@ textarea.form-control {
 
 /* --- API Docs Page --- */
 .api-doc-card-title {
-    font-size: 1.0625rem;
+    font-size: 1.125rem;
     font-weight: 700;
     margin-bottom: 0.25rem;
 }
 
 .api-doc-card-desc {
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     color: var(--color-text-sec);
     line-height: 1.6;
 }
 
 .api-group-title {
-    font-size: 0.75rem;
+    font-size: 0.8125rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.06em;
@@ -1382,10 +1399,10 @@ textarea.form-control {
 /* --- Responsive (new pages) --- */
 @media (max-width: 768px) {
     .hero-title {
-        font-size: 2rem;
+        font-size: 2.125rem;
     }
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 1.0625rem;
     }
     .hero-section {
         padding: 3rem 0 2.5rem;

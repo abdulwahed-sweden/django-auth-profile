@@ -1,7 +1,7 @@
-Django>=5.1,<6.0
-djangorestframework>=3.15,<4.0
-django-bootstrap5>=24.3,<25.0
-python-dotenv>=1.0,<2.0
-drf-spectacular>=0.28,<1.0
-whitenoise>=6.5,<7.0
-gunicorn>=22.0,<24.0
+Django==5.2.11
+djangorestframework==3.16.1
+django-bootstrap5==24.3
+python-dotenv==1.2.1
+drf-spectacular==0.29.0
+whitenoise==6.11.0
+gunicorn==23.0.0
